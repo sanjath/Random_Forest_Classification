@@ -92,7 +92,7 @@ load(file="test.rda")
 colnames(test) # no extra column!
 
 # separate test features from test responses
-tsF<-test[,2:length(test[1,])]
+tsF<-test[,2:length(test[1,])] # alternate way of getting everything except the first column
 tsR<-as.factor(test[,1])
 
 
